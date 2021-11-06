@@ -457,11 +457,13 @@ footer {
 }
     /*---------------------------------------------------------Main Page grid---------------------------------------------------*/
     .grid-container {
+        max-width: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 700px auto auto auto;
+        grid-template-rows: 500px auto auto auto auto auto auto;
         grid-template-areas: 'mytitle' 'content1' 'content2' 'qualification' 'about' 'contact' 'footer';
     }
     .content1 {
+        max-width: 100%;
         grid-area: content1;
         display: grid;
         grid-template-columns: 1fr;
@@ -477,6 +479,7 @@ footer {
 
  
     .content2 {
+        max-width: 100%;
         grid-area: content2;
         display: grid;
         grid-template-columns: 1fr;
@@ -492,10 +495,16 @@ footer {
         margin: auto;
     }
     .qual-icons {
+        max-width: 100%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: 'uni' ' stc' 'prep';
+        
+    }
+    .qual-icons p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
     }
     .info {
         display: grid;
@@ -505,13 +514,15 @@ footer {
         font-size: 20px;
     }
     .para {
+        text-align: justify;
         grid-area: desc;
-        position: relative;
-        top: 0%;
+       margin: auto;
     
     }
     .about p {
         font-size: 20px;
+        padding-bottom: 20px;
+        padding: 50px;
     }
     .icons {
         display: grid;
@@ -520,16 +531,19 @@ footer {
         grid-template-areas: 'twitter' 'git' 'linkedin' 'email';
     }
     .icons i {
-        padding: 20px;
+        padding: 10px;
     }
     .title {
         font-size: 1.5rem;
     }
-    .title p {
-        font-size: 1rem;
-    }
+    
 
     #me{
         height: 400px;
     }
+
+    .contact h1{
+        padding: 10px;
+    }
+    
 }
