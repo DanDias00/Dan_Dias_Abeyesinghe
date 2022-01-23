@@ -286,11 +286,12 @@ footer {
       background-color: black;
 }
 
-.footer-distributed h3 {
+.footer-distributed h1 {
     color: #ffffff;
     font: normal 36px 'Cookie', cursive;
     margin: 0;
     text-align: center;
+    font-size: 2rem;
 }
 
 #myBtn {
@@ -321,9 +322,11 @@ footer {
         width: 100%;
         background-color: black;
         text-align: center;
+       
     }
-    .footer-distributed .footer-center i {
-        margin-left: 0;
+ 
+    .footer-distributed h1 {
+    font-size: 1rem;
     }
 }
 
@@ -368,7 +371,7 @@ footer {
     .grid-container {
         max-width: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 500px auto auto auto auto auto auto;
+        grid-template-rows: 800px auto auto auto auto auto auto;
         grid-template-areas: 'mytitle' 'content1' 'content2' 'qualification' 'about' 'contact' 'footer';
     }
     .content1 {
