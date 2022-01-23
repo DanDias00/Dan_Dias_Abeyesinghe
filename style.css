@@ -440,7 +440,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
-        grid-template-areas: 'twitter' 'git' 'linkedin' 'email';
+        grid-template-areas: 'twitter'  'email' 'linkedin''git';
     }
     .icons i {
         padding: 10px;
