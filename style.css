@@ -8,8 +8,8 @@
     max-width: 100%;
     height: max-content;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 700px auto auto auto auto auto auto;
-    grid-template-areas: 'nav nav nav' 'mytitle mytitle mytitle' 'content1 content1 content1 ' 'content2 content2 content2 ' 'qualification qualification qualification' 'about about about' 'contact contact contact' 'footer footer footer';
+    grid-template-rows: auto 700px auto auto auto auto auto auto auto;
+    grid-template-areas: 'nav nav nav' 'mytitle mytitle mytitle' 'content1 content1 content1 ' 'content2 content2 content2 ' 'content3 content3 content3 ' 'medium medium medium '  'contact contact contact' 'footer footer footer';
 }
 
 body {
@@ -125,94 +125,70 @@ body {
     background-color: rgba(5, 16, 107, 0.829);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px;
+    grid-template-rows: auto;
     grid-template-areas: 'image description';
 }
 
 .image2{
     margin: auto;
+    width: fit-content;
+    height: 500px;
 }
 
-.qualifications {
-    grid-area: qualification;
+
+.content3 {
+    grid-area: content3;
+    font-family: 'Open Sans', sans-serif;
     color: whitesmoke;
-   background-color: rgba(5, 16, 107, 0.829);
-    text-align: center;
-    font-size: 1.5rem;
+    background-color: rgba(5, 16, 107, 0.829);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: ' description image';
 }
 
-.qualifications h1{
-    font-size: 40px;
+
+.topic{
+    grid-area: topic;
+    text-align: center;
 }
-.qual-icons {
-    margin-top: 5%;
-    margin-bottom: 5%;
+.medium {
+    grid-area: medium;
+    font-family: 'Open Sans', sans-serif;
+    color: whitesmoke;
+    background-color: rgba(5, 16, 107, 0.829);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px auto auto;
-    grid-template-areas: 'uni stc prep';
+    grid-template-rows: 200px 400px;
+    grid-template-areas: 
+    'topic topic topic'
+    'image image image';
 }
 
-.qual-icons i {
+.image-med{
     margin: auto;
+    width: fit-content;
+    height: 200px;
+    border-radius: 40px;
 }
+
+.medium p{
+    color: #f2f2f2;
+    text-align: center;
+   
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
 
 .icons i:hover {
     color: rgb(255, 87, 51);
 }
 
-.university {
-    grid-area: uni;
-}
 
-.latest-school {
-    grid-area: stc;
-}
-
-.school {
-    grid-area: prep;
-}
-
-.about {
-    grid-area: about;
-    color: whitesmoke;
-   background-color: rgba(5, 16, 107, 0.829);
-  
-   
-}
-
-.about h1 {
-    text-align: center;
-   font-size: 40px;
-}
-
-.info {
-    
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 'desc img';
-    text-align: center;
-}
-
-.para {
-    grid-area: desc;
-    margin: auto;
-}
-
-
-.about p {
-    font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
-    color: whitesmoke;
-    margin: auto;
-    padding: 5px;
-}
-
-.img {
-    grid-area: img;
-    margin: auto;
-}
 
 .contact {
     grid-area: contact;
@@ -371,8 +347,8 @@ footer {
     .grid-container {
         max-width: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 800px auto auto auto auto auto auto;
-        grid-template-areas: 'mytitle' 'content1' 'content2' 'qualification' 'about' 'contact' 'footer';
+        grid-template-rows: 800px auto auto auto auto auto;
+        grid-template-areas: 'mytitle' 'content1' 'content2''content3''medium' 'contact' 'footer';
     }
     .content1 {
         max-width: 100%;
@@ -406,6 +382,37 @@ footer {
         height: 200px;
         margin: auto;
     }
+
+    .content3 {
+        grid-area: content3;
+        font-family: 'Open Sans', sans-serif;
+        color: whitesmoke;
+        background-color: rgba(5, 16, 107, 0.829);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: ' description' 
+        ' image';
+    }
+
+    .medium {
+        grid-area: medium;
+        font-family: 'Open Sans', sans-serif;
+        color: whitesmoke;
+        background-color: rgba(5, 16, 107, 0.829);
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 200px auto;
+        grid-template-areas: 
+        'topic'
+        'image';
+        max-width: 100%;
+    }
+
+    a{
+        padding: 10px;
+    }
+
     .qual-icons {
         max-width: 100%;
         display: grid;
@@ -414,28 +421,9 @@ footer {
         grid-template-areas: 'uni' ' stc' 'prep';
         
     }
-    .qual-icons p {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 15px;
-    }
-    .info {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 'desc' 'img';
-        font-size: 20px;
-    }
-    .para {
-        text-align: justify;
-        grid-area: desc;
-       margin: auto;
     
-    }
-    .about p {
-        font-size: 20px;
-        padding-bottom: 20px;
-        padding: 50px;
-    }
+    
+  
     .icons {
         display: grid;
         grid-template-columns: 1fr;
