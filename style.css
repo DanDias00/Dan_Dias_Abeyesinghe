@@ -403,9 +403,18 @@ footer {
         'image';
         max-width: 100%;
     }
+    .medium p {
+        max-width: 100%;
+    }
+
+    .image-med{
+        width: 50%;
+        max-width: 100%;
+    }
 
     a{
         padding: 10px;
+        max-width: 100%;
     }
 
     .qual-icons {
