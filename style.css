@@ -249,18 +249,13 @@ footer {
     text-align: left;
     font: bold 16px sans-serif;
     padding: 20px 10px;
-}
-
-.footer-distributed  {
+    background-color: black;
     display: inline-block;
     vertical-align: top;
 }
 
 
-.footer-distributed {
-    width: 100%;
-      background-color: black;
-}
+
 
 .footer-distributed h1 {
     color: #ffffff;
@@ -435,6 +430,7 @@ footer {
     }
     .title {
         font-size: 1.5rem;
+        max-width: 100%;
     }
     
 
